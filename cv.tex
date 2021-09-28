@@ -1,0 +1,158 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[12pt,letterpaper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\name{D. Hudson}{Smith}
+\title{\Large{curriculum vitae}} 
+%\phone[home]{864.423.4713}
+\email{dane2@clemson.edu}                               % optional, remove / comment the line if not wanted
+\social[linkedin]{dhudsmith}                        % optional, remove / comment the line if not wanted
+\social[github]{dhudsmith}                              % optional, remove / comment the line if not wanted
+
+\usepackage[backend=biber,style=authoryear-comp, sorting=none, maxbibnames=99]{biblatex} % bibliography
+\usepackage[american]{babel} % helps convert TeX to American English
+\usepackage{tabto} % spacing package
+
+% add citation resources
+\addbibresource{pubs_ml.bib}
+\addbibresource{pubs_phys.bib}
+\addbibresource{pres_ml.bib}
+\addbibresource{pres_phys.bib}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\section{Professional Experience}
+\cventry{Mar.~2018-Present}{Research Associate for Analytical Systems and Applications}{Clemson University, Watt Family Innovation Center}{Clemson, SC}{}{
+  \begin{itemize}
+    \item One funded project through SCDA ACRE CGP (\$100k). Two pending DoD proposals. One NSF AD proposal in progress.
+    \item Facilitation of applications of IBM Watson to research projects spanning 13 CU departments.
+    \item Active research collaborations with IBM, GHS, ICAR, and Ulbrich Manufacturing.
+    \item Co-leader of two Creative Inquiry teams focusing on research applications of data analytics and visualization.
+  \end{itemize}}  % arguments 3 to 6 can be left empty
+
+
+\cventry{Dec.~2016-Mar.~2018}{Data Scientist}{Dynamit Technologies, LLC.}{Columbus, OH}{}{
+\begin{itemize}
+\item Implemented predictive modeling to improve marketing ROI for a major healthcare company.
+\item Managed a complex data pipeline involving many disparate data sources.
+\item Created and delivered summary reports for internal and client stakeholders.
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\section{Education}
+\cventry{2011-2016}{PhD in Physics}{Ohio State University (OSU)}{Columbus, OH}{GPA: 3.9/4.0}{
+\begin{itemize}
+\item Research Areas: Theoretical Atomic Physics, Theoretical High Energy Physics
+\item Thesis: Inducing Resonant Interactions in Ultracold Atoms with an Oscillating Magnetic Field
+\item Advisor: Dr. Eric Braaten, \url{braaten.1@osu.edu}
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\cventry{2007-2011}{BS in Physics, BA in Mathematics}{Erskine College}{Due West, SC}{GPA: 3.9/4.0}{}  % arguments 3 to 6 can be left empty
+
+\section{Machine learning applications}
+
+\subsection{Peer reviewed publications}
+
+\begin{refsection}[pubs_ml.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+
+\subsection{Conference Papers and Presentations}
+
+\begin{refsection}[pres_ml.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+
+\section{Physics}
+\subsection{Peer reviewed publications}
+\begin{refsection}[pubs_phys.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+
+\subsection{Conference Papers and Presentations}
+
+\begin{refsection}[pres_phys.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+      
+\section{Teaching Experience}
+\cventry{}{CI Instructor}{Clemson University}{Clemson, SC}{}
+{
+  \begin{itemize}
+  \item Spring and Fall 2018, CI Instructor (with KC Wang) for the Watson CI focused on applications of IBM Watson to research at Clemson.
+  \item Fall 2018, CI Instructor (with Dave White) for Ulbrich CI focused on applications of data analytics and data visualization to manufacturing workflows.
+    \end{itemize}
+  }
+
+\cventry{}{Teaching Assistant}{Ohio State University}{Columbus, OH}{}
+{
+\begin{itemize}
+\item Autumn 2015, Tutor for graduate level classical mechanics course
+\item Autumn 2012-Spring 2013, Recitation and lab instructor for Physics: Vibrations, Fluids,\\Thermodynamics, and Special Relativity
+\end{itemize}
+}
+
+\cventry{}{Teaching Assistant}{Erskine College}{Due West, SC}{}
+{
+\begin{itemize}
+\item Spring 2010, Lab instructor for Modern Physics
+\item Autumn 2009, Teaching assistant for Calculus
+\item Autumn 2008-Autumn 2009, Teaching assistant for Introductory Physics
+\item Autumn 2008-Autumn 2010, Writing assistant for various subjects
+\end{itemize}
+}
+
+\section{Relevant Competencies}
+
+\subsection{Computational}
+\begin{itemize}
+\item Python, R, SQL, bash, C++, C\#, Java, LaTeX
+\item The Pytorch deep learning framework
+\item Cloud and cluster computing environments
+\item Hardware-accelerated array programming for scientific computing
+\end{itemize}
+
+\subsection{
+
+
+\section{Honors and Awards}
+\cvline{2016}{Presidential Fellow, OSU}
+\cvline{2013}{Winner of Physics Dept. Poster Competition, OSU}
+\cvline{2011}{Fowler Fellow, OSU}
+\cvline{2011}{University Fellow, OSU}
+\cvline{2010}{T. Kincannon Mathematics Award, Erskine College}
+\cvline{2010}{Junkin Physics Award, Erskine College}
+\cvline{2008}{Garnet Circle Award, Erskine College}
+\cvline{2007}{Roy M. Smith Mathematics Scholarship, Erskine College}
+
+
+\clearpage
+\end{document}
+
+
+%% end of file `cv.tex'.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

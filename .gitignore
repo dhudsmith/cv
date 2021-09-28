@@ -1,0 +1,11 @@
+*.bbl
+*.bcf
+*.blg
+_region_.tex
+*.pdf
+*~
+*.log
+*.out
+*.xml
+*.aux
+.idea
