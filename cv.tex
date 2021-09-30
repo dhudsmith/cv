@@ -5,7 +5,7 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-\documentclass[12pt,letterpaper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,letterpaper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -13,6 +13,14 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
+
+% hyperlink styles
+\AfterPreamble{
+\hypersetup{
+  colorlinks=true
+  urlcolor=magenta
+}
+}
 
 % personal data
 \name{D. Hudson}{Smith}
@@ -39,64 +47,87 @@
 \makecvtitle
 
 \section{Appointments}
-\cventry{Oct.~2019-Present}{Research Assistant Professor}{Clemson University, 
-Holcombe Dept. of ECE}{Clemson, SC}{}{
-\begin{itemize}
-\item Co-created the Watt AI applied artificial intelligence research and education program
-\end{itemize}}  % arguments 3 to 6 can be left empty
-
+\cventry{Oct.~2019-Present}{Joint Appointment: Research Assistant Professor}{Clemson University, 
+Holcombe Dept. of ECE}{Clemson, SC}{}{}  % arguments 3 to 6 can be left empty
 
 \cventry{Mar.~2018-Present}{Data Scientist}{Clemson University, Watt Family Innovation Center}{Clemson, SC}{}{
 \begin{itemize}
 \item Co-created the Watt AI applied artificial intelligence research and education program
 \item Instructed 82 undergraduate students across 22 academic majors in applied artificial intelligence
 \item Incubated 20 distinct research projects in collaboration with Clemson University faculty
-\item Supported a total of 24 internal and external grant proposals (11 funded to date)
-\end{itemize}}  % arguments 3 to 6 can be left empty
-
+\item Supported a total of 24 internal and external grant proposals (11 funded, 2 pending to date)
+\end{itemize}}
 
 \cventry{Dec.~2016-Mar.~2018}{Data Scientist}{Dynamit Technologies, LLC.}{Columbus, OH}{}{
 \begin{itemize}
-\item Implemented predictive modeling to improve marketing ROI for a major healthcare company.
-\item Managed a complex data pipeline involving many disparate data sources.
-\item Created and delivered summary reports for internal and client stakeholders.
-\end{itemize}}  % arguments 3 to 6 can be left empty
+\item Used predictive modeling to optimize millions of dollars in ad spend for Fortune 500 company
+\item Managed a complex data pipeline involving cloud infrastructure and disparate data sources
+\item Created and delivered summary reports for internal and client stakeholders
+\end{itemize}}
 
 \section{Education}
 \cventry{2011-2016}{PhD in Physics}{Ohio State University (OSU)}{Columbus, OH}{GPA: 3.9/4.0}{
 \begin{itemize}
-\item Research Areas: Theoretical Atomic Physics, Theoretical High Energy Physics
-\item Thesis: Inducing Resonant Interactions in Ultracold Atoms with an Oscillating Magnetic Field
+\item Research: theoretical atomic and high-energy physics, computer simulation of quantum systems
+\item Thesis: \href{https://etd.ohiolink.edu/apexprod/rws_etd/send_file/send?accession=osu1478192866433031&disposition=inline}{Inducing Resonant Interactions in Ultracold Atoms with an Oscillating Magnetic Field}
 \item Advisor: Dr. Eric Braaten, \url{braaten.1@osu.edu}
-\end{itemize}}  % arguments 3 to 6 can be left empty
+\end{itemize}}
 
-\cventry{2007-2011}{BS in Physics, BA in Mathematics}{Erskine College}{Due West, SC}{GPA: 3.9/4.0}{}  % arguments 3 to 6 can be left empty
+\cventry{2007-2011}{BS in Physics, BA in Mathematics}{Erskine College}{Due West, SC}{GPA: 3.9/4.0}{}
 
-\section{Machine learning applications}
+\section{Research Grants}
+\cvitemwithcomment{7/2021}{RHBSSI Seed Grant (Clemson University)}{\$45k}
+\quad ColorNet: Developing AI-based color correction tools for sports media applications
 
-\subsection{Peer reviewed publications}
+\cvitemwithcomment{6/2021}{ACRE Competitive Grants Program (SCDA)}{\$120k}
+\quad AI Master Gardener for Greenhouse Supervision
+
+\cvitemwithcomment{4/2021}{Prisma Health Seed Grant}{\$20k}
+\quad Automated Quality Assessment of FAST Exams
+
+\cvitemwithcomment{2/2021}{ACRE Competitive Grants Program (SCDA)}{\$20k}
+\quad AI for Fruit and Vegetable Harvesting in South Carolina
+
+\cvitemwithcomment{2/2021}{CU Seed Grant, Tier 1 (Clemson University)}{\$5k}
+\quad ColorNet: An AI-based color management system for live video
+
+\cvitemwithcomment{2/2021}{CU Seed Grant, Tier 2 (Clemson University)}{\$10k}
+\quad Integrating Dispersed Big Data into a Single Smart Water and Infra.~Mgmt.~System
+
+\cvitemwithcomment{11/2019}{CURF Tech Maturation Fund (Clemson)}{\$29k}
+\quad Rapid Chicken Sex Determination with Multiple Mechanisms and AI
+
+\cvitemwithcomment{8/2019}{Erwin Center for Brand Communications (Clemson University)}{\$8k}
+\quad AI for on the fly color correction of sports footage
+
+\cvitemwithcomment{7/2018}{ACRE Competitive Grants Program (SCDA)}{\$105k}
+\quad Rapid Chicken Sex Determination with Multiple Mechanisms and AI
+
+
+\section{Peer reviewed publications}
+\subsection{Applied machine learning}
 
 \begin{refsection}[pubs_ml.bib]
   \nocite{*}
   \printbibliography[heading=none]
 \end{refsection}
 
-\subsection{Conference Papers and Presentations}
+\subsection{Physics}
+
+\begin{refsection}[pubs_phys.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+
+\section{Conference Papers and Presentations}
+\subsection{Applied machine learning}
 
 \begin{refsection}[pres_ml.bib]
   \nocite{*}
   \printbibliography[heading=none]
 \end{refsection}
 
-\section{Physics}
-\subsection{Peer reviewed publications}
-\begin{refsection}[pubs_phys.bib]
-  \nocite{*}
-  \printbibliography[heading=none]
-\end{refsection}
-
-\subsection{Conference Papers and Presentations}
-
+\subsection{Physics}
 \begin{refsection}[pres_phys.bib]
   \nocite{*}
   \printbibliography[heading=none]
@@ -129,16 +160,13 @@ Holcombe Dept. of ECE}{Clemson, SC}{}{
 \end{itemize}
 }
 
-\section{Relevant Competencies}
-
-\subsection{Computational}
+\section{Computational tools}
 \begin{itemize}
 \item Python, R, SQL, bash, C++, C\#, Java, LaTeX
 \item The Pytorch deep learning framework
 \item Cloud and cluster computing environments
 \item Hardware-accelerated array programming for scientific computing
 \end{itemize}
-
 
 \section{Honors and Awards}
 \cvline{2016}{Presidential Fellow, OSU}
