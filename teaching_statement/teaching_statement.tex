@@ -1,0 +1,94 @@
+\documentclass[nobib]{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+\setcounter{secnumdepth}{3}
+
+\usepackage{amsmath}
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title{Teaching Statement}
+\author{D.~Hudson Smith (dane2@clemson.edu)}
+%\date{16 January 2024}  % if the \date{} command is left out, the current date will be used
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+\begin{document}
+
+\maketitle% this prints the handout title, author, and date
+
+\begin{abstract}
+  \noindent As I teach students, I try to remember the profound impact my best teachers have had on me. In this statement, I describe my teaching philosophy modeled after the behavior of my best teachers, discuss my experience with teaching, and detail my future teaching interests.
+\end{abstract}
+
+%\printclassoptions
+\marginnote[1cm]{
+  Outline:
+  \begin{enumerate}
+    \item Philosophy
+    \item Experience
+    \item Interests
+    \item Outlook
+  \end{enumerate}
+}
+
+
+\section{Teaching Philosophy}
+In addition to competently delivering subject matter, my best teachers projected deep joy in the knowledge they imparted and an unapologetic commitment to intellectual rigor. I attribute much of my character to these role models and seek to emulate their behavior in my engagements with my students.
+
+\paragraph{Joy.} It is a joyful thing to learn new things about the world, experience the knowing of those things, and then share those things with others. When a teacher maintains a posture of joy in the knowledge they share, students start to see (even if they do not understand) the value of the knowledge they are trying to convey. Joy cuts through the malaise and motivates students to continue despite their struggles. I led a seminar course for several years where undergraduates read and presented academic papers on machine learning topics to their classmates. My students tended to focus on fine details and lose track of the {\it why} behind their paper. As a result, they experienced more trepidation than joy while preparing their presentations. To combat this tendency, I designed my course materials to help students focus on the core significance of the ideas and to make it their top priority to convey those ideas to the audience.
+
+\paragraph{Intellectual rigor.} Intellectual rigor – a commitment to pursuing the clearest understanding – is an invaluable tool for the learner. It frees the learner to admit gaps in their understanding, change perspectives when faced with new evidence, and pursue new knowledge to inform open questions. I seek to model this behavior with my students by communicating precisely, courteously pointing out areas where my students lack clear thinking, and being candid when I have made a mistake or lack understanding in some area. This posture communicates high expectations to students while freeing them to acknowledge and work through their weak spots with their peers and teachers.
+
+\section{Experience}
+
+\paragraph{Teaching.} I gained my first teaching experience as an undergraduate TA for physics and calculus courses over four semesters. In that role, I led recitation sessions and assisted with laboratory exercises. While a grad student, I was a teaching assistant for an introductory physics course. In addition to leading recitations and labs, I helped design practice problems and graded assignments and tests. In my previous role at Clemson, I led an introductory data science course for ten consecutive semesters as a companion to the Watt AI undergraduate research program. I designed this course from scratch upon starting my role at Clemson and continued to build and refine the curriculum over several years. The final curriculum, which is still in use in the Watt AI program, includes units in supervised and unsupervised machine learning, model evaluation techniques, natural language processing, and computer vision. Since the beginning of the program, more than 100 students have taken the course, and we have received highly positive feedback personally from students and in course evaluations.
+
+After teaching the introductory course for several semesters, it became clear that many students would benefit from a more advanced course that could be taken alongside involvement in our undergraduate research activity. To address this gap, Dr. Ehrett and I designed an advanced topics course where students read and present academic papers to their peers, followed by a class discussion. These student-led discussions have been one of my most satisfying teaching experiences. I have observed students deeply engaged with the course material and maturing in their ability to think carefully through complex issues.
+
+In my current role with Research Computing and Data at Clemson University, I have developed a series of hands-on workshops covering topics in Machine Learning, including beginner and advanced deep learning, data visualization, introduction to machine learning in Python, and a popular workshop building transformer based neural networks from scratch\thanks{This and the other workshops mentioned are available at \url{https://clemsonciti.github.io/rcde_workshops/pytorch_llm/00-index.html}}. These workshops attracted more than 150 participants in one year, from undergraduates through faculty from diverse disciplines.
+
+\paragraph{Mentorship.} At Clemson, I am co-advising a PhD student in the Biomedical Data Science and Informatics program and one in Computer Science. Both students are developing new computer vision techniques incorporating inductive priors into the modeling approach. I have worked closely with these students, functioning as their primary source for feedback as they develop and implement new ideas on the projects we pursue together. One of these projects has already led to publication with the student\thanks{}. At MUSC, I have recently joined the dissertation committee for a student pursuing a DMD in orthodontics.
+
+In my previous role leading the Watt AI program, I enabled ML applications to research at Clemson by matching undergraduates with faculty to implement ML in their research. A significant part of my role was to advise these students. This advisement involved weekly small group meetings with students to guide them toward the appropriate methods and help them troubleshoot problems. I have hired the best of these students as interns and mentored them intensively on undergraduate research projects. Five students have begun graduate-level education in machine learning-related disciplines at prestigious universities, including the University of Wisconsin in Madison, Harvard University, and Columbia University. Several of these students informed me that participation in my program significantly influenced their decision to pursue graduate study.
+
+\section{Interests}
+I have a keen interest in teaching and advising students at the undergraduate and graduate levels. I would be happy to have the opportunity to teach courses covering fundamental topics in mathematics and statistics. I am especially interested in teaching courses on machine learning topics, including data science, data visualization, artificial intelligence, and deep learning. In addition, my physics background gives me a solid foundation for teaching courses related to digital signal processing and scientific computing. I would be excited to design new course offerings at the undergraduate or graduate levels to support these disciplines as needed, and my previous experience gives me a goo
+
+% I have a keen interest in teaching and advising students at the undergraduate and graduate levels. I would be happy for the opporuntity to teach courses covering fundamental topics in mathematics and statistics. I am especially interested in teaching courses on machine learning topics, including data science \thanks{CPSC 4300, 6300, 8650}, data visualization \thanks{4030, 6030, 8030}, artificial intelligence \thanks{4420, 4430, 6420, 6430, 8420}, and deep learning \thanks{8430}. In addition, my physics background gives me a solid foundation for teaching courses related to digital signal processing and scientific computing \thanks{1150, 4550, 6550, 8490}. I would be excited for the opportunity to design new course offerings at the undergraduate or graduate levels to support these disciplines as needed, and I feel that my previous experience gives me a good starting point for that development. I am also interested in developing a graduate-level course focused on probabilistic modeling with deep learning leveraging the techniques of amortized variational inference.
+
+% In addition, leveraging my background in quantum physics, I would be interested in taking steps toward the development of a course offering in quantum computing.
+
+
+\nobibliography{}
+
+\end{document}
