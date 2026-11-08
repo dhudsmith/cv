@@ -12,7 +12,7 @@
 \moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.85]{geometry}
 
 % hyperlink styles
 \AfterPreamble{
@@ -21,6 +21,9 @@
   urlcolor=magenta
 }
 }
+
+% Use scalable Latin Modern for monospaced contact links.
+\renewcommand*{\ttdefault}{lmtt}
 
 % personal data
 \name{D. Hudson}{Smith}
@@ -32,11 +35,13 @@
 
 \usepackage[backend=biber,style=nature, sorting=none, maxbibnames=99]{biblatex} % bibliography
 \usepackage[american]{babel} % helps convert TeX to American English
+\usepackage{needspace}
 \usepackage{tabto} % spacing package
 
 % add citation resources
 \addbibresource{pubs_ml.bib}
 \addbibresource{pubs_phys.bib}
+\addbibresource{pubs_preprints.bib}
 \addbibresource{pres_ml.bib}
 \addbibresource{pres_phys.bib}
 
@@ -52,7 +57,7 @@
 I develop techniques for incorporating prior knowledge into machine learning systems for data-constrained applications. This synthesis of established domain knowledge with flexible machine learning methods leads to better anomaly detection rates, improved sample efficiency, and explainable inference, without sacrificing the expressive power of data-driven techniques like deep learning.
 
 \section{Positions}
-\cventry{8/2024 -- present}{Dept. of Mathematical and Statistical Sciences}{Assistant Professor}{Clemson University}{}{}
+\cventry{8/2024 -- present}{School of Mathematical and Statistical Sciences}{Assistant Professor}{Clemson University}{}{}
 \cventry{7/2022 -- present}{Clemson/MUSC Artificial Intelligence Hub}{Co-Lead}{Clemson University}{}{}
 \cventry{1/2023 -- 7/2024}{Research Computing and Data, CCIT}{Director of Applied Machine Learning}{Clemson University}{}{}
 % \cventry{10/2019 -- present}{Holcombe Dept. of ECE}{Research Assistant Professor}{Clemson University}{}{}  % arguments 3 to 6 can be left empty
@@ -69,75 +74,128 @@ I develop techniques for incorporating prior knowledge into machine learning sys
 \cventry{2007-2011}{B. S. in Physics, B. A. in Mathematics}{Erskine College}{Due West, SC}{GPA: 3.9/4.0}{}
 
 \section{Publications}
-\subsection{Machine learning and Artificial Intelligence}
+\subsection{Machine Learning and Applied Research}
 
 \begin{refsection}[pubs_ml.bib]
   \nocite{*}
   \printbibliography[heading=none]
 \end{refsection}
 
-\subsection{Atomic Physics}
+\subsection{Preprints}
+
+\begin{refsection}[pubs_preprints.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+
+\subsection{Physics}
 
 \begin{refsection}[pubs_phys.bib]
   \nocite{*}
   \printbibliography[heading=none]
 \end{refsection}
 
-\section{Research awards}
+\section{Patent}
+\cvitem{2022}{E. B. Walker and D. Hudson Smith. \textit{Color adjustment system for disparate displays}. U.S. Patent 11,501,472, granted November 15, 2022.}
 
-\cvitemwithcomment{1/2024}{NIH COBRE Pilot Award}{\$350k}
+\section{Research awards}
+\cvitem{}{Amounts are total project awards, not individual funding shares.}
+
+\Needspace{5\baselineskip}
+\cvitemwithcomment{2026--2027}{Clemson School of Health Research}{\$50k}
+\quad (PI) FAST Pilot Data Collection for AI-Enabled Guidance
+
+\Needspace{5\baselineskip}
+\cvitemwithcomment{from 2026}{NSF STRIDE, two awards}{\$199k combined}
+\quad (Co-I) Forensic taphonomy database; AI-augmented X-ray fracture tool
+
+\Needspace{5\baselineskip}
+\cvitemwithcomment{1/2025--12/2025}{Clemson Media Forensics Hub}{\$15k}
+\quad (PI) Modeling the Tactics of State-Backed Social Media Information Operations
+
+\Needspace{5\baselineskip}
+\cvitemwithcomment{12/2024--7/2025}{Booz Allen Hamilton}{\$511,384}
+\quad (PI) Foreign Influence Network Detection Development
+
+\Needspace{5\baselineskip}
+\cvitemwithcomment{9/2024--8/2026}{CDC}{\$2.8MM}
+\quad (Senior Personnel) Disease Monitoring Infrastructure to support Detection, Surveillance, and Forecasting of Emerging and Re-Emerging Pathogens (DMI-DEEP)
+
+\Needspace{5\baselineskip}
+\cvitemwithcomment{5/2024--4/2026}{NIH}{\$405,677}
+\quad (Senior Personnel) Understanding and Visualizing Emergency Department Clinician Well-Being and Strain
+
+
+\Needspace{5\baselineskip}
+\cvitemwithcomment{1/2024}{NIH COBRE Pilot Award}{\$345,520}
 \quad (Co-PI) Team Science Supplement: SC COBRE for Translational Research Improving Musculoskeletal Health (SC TRIMH)
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{9/2023}{CDC Center for Forecasting and Outbreak Analytics}{\$7MM}
 \quad (Senior Personnel) Disease Modeling and Analytics to inform Outbreak Preparedness, Response, Intervention, Mitigation, and Elimination in South Carolina (DMA-PRIME)
 
-\cvitemwithcomment{8/2023}{NIH COBRE Renewal Award}{\$11MM}
+\Needspace{5\baselineskip}
+\cvitemwithcomment{8/2023}{NIH COBRE Renewal Award}{\$11,113,053}
 \quad (Co-PI) COBRE Renewal: Translational Research Improving Musculoskeletal Health (TRIMH) (SC TRIMH)
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{7/2023}{Clemson/MUSC AI Hub Augmentation Award}{\$25k}
 \quad (Co-PI) Automated Identification of Patent Ductus Arteriosus using a Computer Vision Model
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{4/2023}{Clemson University Research Foundation Technology Maturation Award}{\$20k}
 \quad (Senior Personnel) Integration of Smart Needle Measurements and Functional Ultrasonography by Machine Learning for Quantitative Monitoring and Assessment of Acupuncture Myofascial Pain Management
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{1/2022}{Clemson-MUSC Artificial Intelligence Hub}{\$5k}
 \quad (Fellow) Artificial Intelligence Advocate
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{7/2021}{RHBSSI Seed Grant (Clemson University)}{\$45k}
 \quad (Co-PI) ColorNet: Developing AI-based color correction tools for sports media applications
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{6/2021}{ACRE Competitive Grants Program (SCDA)}{\$120k}
 \quad (PI) AI Master Gardener for Greenhouse Supervision
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{4/2021}{Prisma Health Seed Grant}{\$20k}
 \quad (Senior Personnel) Automated Quality Assessment of FAST Exams
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{2/2021}{ACRE Competitive Grants Program (SCDA)}{\$20k}
 \quad (Co-PI) AI for Fruit and Vegetable Harvesting in South Carolina
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{2/2021}{CU Seed Grant, Tier 1 (Clemson University)}{\$5k}
 \quad (Co-PI) ColorNet: An AI-based color management system for live video
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{11/2019}{CURF Tech Maturation Fund (Clemson)}{\$29k}
 \quad (Co-PI) ColorNet: Consistent display of Clemson brand colors using artificial intelligence
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{8/2019}{Erwin Center for Brand Communications (Clemson University)}{\$8k}
 \quad (Co-PI) AI for on the fly color correction of sports footage
 
+\Needspace{5\baselineskip}
 \cvitemwithcomment{7/2018}{ACRE Competitive Grants Program (SCDA)}{\$105k}
 \quad (Co-PI) Rapid Chicken Sex Determination with Multiple Mechanisms and AI
 
 
 \section{Teaching Experience}
 \subsection{Mentorship Experience}
-\cvitem{Graduate students}{I co-advise one PhD student in Biomedical Data Science and Informatics, two PhD students in the School of Computing, and one DMD student in the Department of Orthodontics at MUSC.}
+\cvitem{Graduate students}{I advise or co-advise doctoral and master's students in machine learning and applied research. My mentoring has included students in mathematical and statistical sciences, biomedical data science and informatics, electrical and computer engineering, computing, and orthodontics.}
 \cvitem{Undergraduates}{In my 5 years leading the Watt AI program, I worked with over 100 Creative Inquiry students applying Machine Learning techniques to research projects at Clemson.}
 \cvitem{Interns}{Since 2018, I have mentored more than 15 undergraduate student interns. These interns worked on machine-learning related projects in diverse disciplines. }
 \subsection{Clemson University}
+\cvitem{Graduate courses}{Developed and taught Introduction to Machine Learning I and II (MATH 8710/8720), including original problem sets and exams.}
+\cvitem{Fall 2024}{Instructor for Introduction to Data Science (MATH 2800).}
+\Needspace{5\baselineskip}
 \cvitem{Spring 2023--present}{Instructor for Data Science, Machine Learning,
   and Deep Learning Workshops for Research Computing and Data. Selected topics
-  include "Data Visualization in Python", "Introduction to Deep Learning with Pytorch",
-  and "Attention, Transformers, and LLMs: a hands-on introduction in Pytorch"}
+  include "Data Visualization in Python", "Introduction to Deep Learning with PyTorch",
+  and "Attention, Transformers, and LLMs: a hands-on introduction in PyTorch"}
 \cvitem{Spring 2018--Fall 2022}{Instructor for Watt AI Creative Inquiry course for 9 consecutive semesters}
 \cvitem{Spring 2020--Fall 2021}{Designed intro to artificial intelligence curriculum for undergraduates from diverse majors}
 \cvitem{Fall 2021--Fall 2022}{Led weekly journal club with advanced students}
@@ -153,7 +211,7 @@ I develop techniques for incorporating prior knowledge into machine learning sys
 \cvitem{Fall 2008--Fall 2009}{Teaching assistant for Introductory Physics}
 \cvitem{Fall 2008--Fall 2010}{Writing assistant for various subjects}
 
-\section{Presentations}
+\section{Presentations and Conference Abstracts}
 \subsection{Machine learning}
 
 \begin{refsection}[pres_ml.bib]
@@ -167,15 +225,22 @@ I develop techniques for incorporating prior knowledge into machine learning sys
   \printbibliography[heading=none]
 \end{refsection}
 
+\section{Professional Service}
+\cvitem{2026}{NeurIPS reviewer, four papers.}
+\cvitem{2025}{MICCAI reviewer, six papers.}
+\cvitem{2022--present}{Co-lead, Clemson/MUSC Artificial Intelligence Hub; organizes the annual AI Hub Summit and AI project consultation service.}
+
 \section{Computational tools}
 \begin{itemize}
   \item Python, R, SQL, bash, C++, C\#, Java, LaTeX
-  \item Deep Learning and Probabilistic Programming: Pytorch, Pyro, NumPyro, Jax
+  \item Deep Learning and Probabilistic Programming: PyTorch, Pyro, NumPyro, JAX
   \item Experience with Cloud and cluster computing environments
   \item Hardware-accelerated array programming for scientific computing
 \end{itemize}
 
+\Needspace{14\baselineskip}
 \section{Honors and Awards}
+\cvline{2024}{National Communication Association Bill Eadie Distinguished Scholarly Article Award, for co-authored article on social media trolls and image repair in the Daryl Morey affair.}
 \cvline{2016}{Presidential Fellow, OSU}
 \cvline{2013}{Winner of Physics Dept. Poster Competition, OSU}
 \cvline{2011}{Fowler Fellow, OSU}
